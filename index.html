@@ -14,6 +14,51 @@
     />
   </head>
   <body class="bg-[#121212] text-white">
+    <!-- <nav id="nav"
+      class="bg-blue-950 fixed bottom-0 z-20 right-0 left-0 p-2 rounded-t-md sm:hidden"
+    >
+      <div class="flex flex-col justify-center sm:justify-items-start">
+        <ul class="flex justify-evenly">
+          <li>
+            <a href="#home" class="flex flex-col items-center text-orange-400">
+              <ion-icon
+                name="home-outline"
+                class="text-xl sm:hidden"
+              ></ion-icon>
+              <span class="font-medium">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#portofolio" class="flex flex-col items-center text-white">
+              <ion-icon
+                name="compass-outline"
+                class="text-xl sm:hidden"
+              ></ion-icon>
+              <span class="font-medium">Portofolio</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="flex flex-col items-center text-white">
+              <ion-icon
+                name="trophy-outline"
+                class="text-xl sm:hidden"
+              ></ion-icon>
+              <span class="font-medium">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="flex flex-col items-center text-white">
+              <ion-icon
+                name="paper-plane-outline"
+                class="text-xl sm:hidden"
+              ></ion-icon>
+              <span class="font-medium">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav> -->
+
     <section id="home"
       class="min-h-screen flex flex-col items-center justify-center px-10 md:flex-row md:items-center md:justify-center"
     >
@@ -26,7 +71,7 @@
         </span>
         <div class="inline-block w-full flex justify-center text-2xl gap-2 md:justify-start">
         <a href="https://github.com/Abyan23" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-        <a href="https://www.linkedin.com/in/abyandhiyaulhaq/" target="_blank" class="text-2xl"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/abyan-dhiya-ulhaq-631734375/?trk=opento_sprofile_details" target="_blank" class="text-2xl"><ion-icon name="logo-linkedin"></ion-icon></a>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhya947@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
       </div>
       </div>
@@ -35,12 +80,20 @@
     <section class="min-h-screen flex flex-col justify-around text-center">
       <div class="w-full">
         <h1 class="font-judul text-3xl mb-5 text-center">Tentang Saya</h1>
-        <p class="font-serif p-5">
+        <p class="font-base p-5">
           Saya Abyan Dhiya Ulhaq, lulusan Teknik Informatika dengan minat utama
           di bidang front-end development, serta game development sebagai hobi
           yang saya tekuni.Saya terus mengembangkan keahlian melalui
           pembelajaran mandiri dan eksplorasi teknologi terbaru, baik dalam
           pengembangan web maupun game.
+        </p>
+      </div>
+      <div>
+        <h1 class="font-judul text-3xl mb-5 text-center">Fokus Saya</h1>
+        <p class="font-base p-5">
+          Menciptakan antarmuka digital yang tidak hanya indah secara visual,
+          tetapi juga memberikan pengalaman yang nyaman, intuitif, dan berpusat
+          pada kebutuhan pengguna.
         </p>
       </div>
     </section>
@@ -50,11 +103,11 @@
       <div
         class="grid grid-cols-1 gap-6 w-full max-w-screen-lg mx-auto justify-items-center sm:grid-cols-2"
       >
-        <div class="max-w-full bg-[#282828] border-2 border-gray-400 rounded overflow-hidden shadow-2xl mx-auto">
+        <div class="max-w-full rounded-lg overflow-hidden shadow-2xl mx-auto bg-[#282828] border-2 border-gray-400">
           <div class="relative w-full">
             <a href="https://raccoltaaggriculture.my.id/" target="_blank">
             <img
-              class="w-full shadow-xl rounded-lg"
+              class="w-full"
               src="../img/raccolta.JPG"
               alt="raccolta"
             />
@@ -62,10 +115,10 @@
           </div>
 
           <div class="px-6 py-4 flex-grow">
-            <h2 class="font-bold text-xl mb-2">
+            <h2 class="font-bold text-lg mb-2">
               Raccolta Agriculture
             </h2>
-            <p class="text-white text-base min-h-32">
+            <p class="text-white font-base min-h-32">
               Sebuah brand pertanian yang dibangun dengan misi menyediakan berbagai kebutuhan pertanian
               secara praktis dan terpercaya. Bisnis ini fokus pada distribusi
               produk seperti pupuk, pestisida, dan insektisida.
@@ -74,7 +127,7 @@
         </div>
 
         <div class="max-w-full rounded overflow-hidden shadow-2xl mx-auto flex flex-col h-full bg-[#282828] border-2 border-gray-400">
-          <div class="relative w-full">
+          <div class="relative group w-full">
             <a href="https://avantiberkahsemesta.com" target="_blank">
             <img
               class="w-full shadow-xl rounded-lg"
@@ -85,7 +138,7 @@
           </div>
 
           <div class="px-6 py-4 flex-grow">
-            <h2 class="font-bold text-xl mb-2 text-center">
+            <h2 class="font-bold text-xl mb-2">
               PT.Avanti Berkah Semesta
             </h2>
             <p class="text-base min-h-32 m-auto">
@@ -125,6 +178,13 @@
               />
             </div>
             <div class="swiper-slide flex justify-center">
+              <img
+                src="/img/Plant Defender/3.png"
+                alt=""
+                class="w-full object-cover"
+              />
+            </div>
+            <div class="swiper-slide items-center">
               <img
                 src="/img/Plant Defender/3.png"
                 alt=""
@@ -191,10 +251,10 @@
 
     <section class="w-full min-h-screen" id="contact">
       <div class="flex flex-col justify-around text-center min-h-screen">
-        <div class="font-serif text-2xl gap-10">
+        <div class="text-2xl gap-10">
           <h1>Tertarik Bekerja Sama Dengan Saya ?</h1>
             <h1>Hubungi Saya</h1>
-        <a href="https://www.linkedin.com/in/abyandhiyaulhaq/" target="_blank" class="text-2xl"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://www.linkedin.com/in/abyan-dhiya-ulhaq-631734375/?trk=opento_sprofile_details" target="_blank" class="text-2xl"><ion-icon name="logo-linkedin"></ion-icon></a>
         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhya947@gmail.com" target="_blank"><ion-icon name="mail-outline"></ion-icon></a>
           </div>
         </div>
