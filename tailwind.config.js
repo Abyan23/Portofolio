@@ -1,14 +1,15 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './index.html',      // index utama
-    './src/**/*.{html,js}', // semua file html & js di src/
+    './index.html',     
+    './src/**/*.{html,js}', 
   ],
   theme: {
     extend: {
       fontFamily: {
         judul: ["'Press Start 2P'", "system-ui"],
-        judul2: ["VT323", "monospace"]
+        main:["Inter", "sans-serif"],
+        main2:["Poppins", "sans-serif"]
       }
     },
   },
