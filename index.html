@@ -14,7 +14,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
     
-    <body class="bg-[#0a0a0a] min-w-screen text-[#f9fafb] font-main2 scroll-smooth">
+    <body class="bg-[#0a0a0a] w-full text-[#f9fafb] font-main2 scroll-smooth">
     <section
       id="home"
       class="relative text-[#f9fafb] opacity-1 flex flex-col align-middle justify-center px-10 md:flex-row md:items-center md:justify-center"
@@ -52,7 +52,7 @@
       </div>
     </section>
 
-    <section id="about" data-scroll-animate class="relative grid grid-cols-1 place-content-center text-center m-5 min-h-screen md:grid-cols-2">
+    <section id="about" data-scroll-animate class="relative w-full grid grid-cols-1 place-content-center text-center m-5 min-h-screen md:grid-cols-2">
       <div 
           class="opacity-1">
         <h1 class="font-judul text-2xl text-center m-5"><u>About Me</u></h1>
@@ -121,7 +121,7 @@
         </button>
       </div>
 
-      <section id="portofolio" class="m-5" x-show="activeTab === 'portfolio'" x-transition.delay.75ms>
+      <section id="portofolio" class="m-5 w-full" x-show="activeTab === 'portfolio'" x-transition.delay.75ms>
         <h1 class="font-judul text-3xl text-center m-7">Portofolio</h1>
         <div
           class="grid grid-cols-1 gap-6 w-full max-w-screen-lg mx-auto justify-items-center sm:grid-cols-2"
