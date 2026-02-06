@@ -17,7 +17,7 @@ import { animate, inView } from "https://cdn.jsdelivr.net/npm/motion@12.29.2/+es
   inView("[data-scroll-animate]", (element) => {
     animate(
       element,
-      { opacity: 1, x: [-1000, 0] },
+      { opacity: 1, x: [-150, 0] },
       { duration: 1, easing: [0.17, 0.55, 0.55, 1] }
     );
   });
