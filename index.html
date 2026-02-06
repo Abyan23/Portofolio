@@ -13,60 +13,16 @@
     <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
-  <body class="bg-[#0a0a0a] text-[#f9fafb] font-main2">
-    <!-- <nav id="nav"
-      class="bg-blue-950 fixed bottom-0 z-20 right-0 left-0 p-2 rounded-t-md sm:hidden"
-    >
-      <div class="flex flex-col justify-center sm:justify-items-start">
-        <ul class="flex justify-evenly">
-          <li>
-            <a href="#home" class="flex flex-col items-center text-orange-400">
-              <ion-icon
-                name="home-outline"
-                class="text-xl sm:hidden"
-              ></ion-icon>
-              <span class="font-medium">Home</span>
-            </a>
-          </li>
-          <li>
-            <a href="#portofolio" class="flex flex-col items-center text-white">
-              <ion-icon
-                name="compass-outline"
-                class="text-xl sm:hidden"
-              ></ion-icon>
-              <span class="font-medium">Portofolio</span>
-            </a>
-          </li>
-          <li>
-            <a href="#projects" class="flex flex-col items-center text-white">
-              <ion-icon
-                name="trophy-outline"
-                class="text-xl sm:hidden"
-              ></ion-icon>
-              <span class="font-medium">Projects</span>
-            </a>
-          </li>
-          <li>
-            <a href="#contact" class="flex flex-col items-center text-white">
-              <ion-icon
-                name="paper-plane-outline"
-                class="text-xl sm:hidden"
-              ></ion-icon>
-              <span class="font-medium">Contact</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav> -->
-
+    
+    <body class="bg-[#0a0a0a] text-[#f9fafb] font-main2 scroll-smooth">
     <section
       id="home"
-      class=" text-[#f9fafb]opacity-1 min-h-screen flex flex-col align-middle justify-center px-10 md:flex-row md:items-center md:justify-center"
+      class="relative text-[#f9fafb] opacity-1 flex flex-col align-middle justify-center px-10 md:flex-row md:items-center md:justify-center"
     >
       <div data-scroll-animate
-        class="flex flex-col justify-center text-center items-center md:items-start md:text-left md:ml-10"
+        class="flex flex-col justify-center text-center items-center h-screen md:items-start md:text-left md:ml-10"
       >
-        <pre class="font-judul text-lg font-bold ctext text-center md:text-xl">Hi i'm Abyan Dhiya Ulhaq</pre>
+        <pre class="font-judul text-lg font-bold text-center md:text-xl">Hi i'm Abyan Dhiya Ulhaq</pre>
         <span class="text-xs text-[#9ca3af] font-judul">
           I enjoy turning designs into functional and responsive web interfaces.
         </span>
@@ -87,15 +43,20 @@
             target="_blank"
             ><ion-icon name="mail-outline"></ion-icon
           ></a>
+          
+        </div>
+        <div class="absolute bottom-10 left-0 w-full flex justify-center gap-4">
+          <a href="#about" class="group relative inline-flex p-3 items-center justify-center overflow-hidden rounded-md border border-[#f9fafb] bg-transparent font-medium text-[#f9fafb] transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)]">About Me</a>
+          <a href="img/CV/CV_Abyan Dhiya Ulhaq.pdf" class="group cursor-pointer relative inline-flex p-3 items-center justify-center overflow-hidden rounded-md border border-[#f9fafb] bg-transparent font-medium text-[#f9fafb] transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)]" download>My Resume</a>
         </div>
       </div>
     </section>
 
-    <section data-scroll-animate class="text-center m-5 sm:flex">
+    <section id="about" data-scroll-animate class="relative grid grid-cols-1 place-content-center text-center m-5 min-h-screen md:grid-cols-2">
       <div 
-          class="opacity-1 sm:max-w-[50%]">
-        <h1 class="font-judul text-2xl text-center"><u>About Me</u></h1>
-        <p class="font-base text-[#9ca3af] p-5 h-full flex justify-center place-items-center">
+          class="opacity-1">
+        <h1 class="font-judul text-2xl text-center m-5"><u>About Me</u></h1>
+        <p class="font-base text-[#9ca3af] flex justify-center place-items-center ">
           I’m a junior frontend developer focused on building clean and 
           responsive user interfaces. I usually work from existing designs, 
           but I also have experience contributing to UI design—such as creating 
@@ -104,8 +65,8 @@
         </p>
       </div>
 
-      <div class="opacity-1 sm:w-[50%]">
-        <h1 class="font-judul text-2xl text-center"><u>My Tech Stack</u></h1>
+      <div class="opacity-1">
+        <h1 class="font-judul text-2xl text-center m-5"><u>My Tech Stack</u></h1>
         <div class="relative mx-auto w-full">
 <div class="swiper mySwiper h-52 w-full">
   <div class="swiper-wrapper h-full text-[#9ca3af]">
@@ -327,7 +288,7 @@
             <input class=""type="hidden" name="access_key" value="24f6d9b4-5fc4-40dc-92c1-49e564812f01">
             <input type="text" name="name" placeholder="Your Name.">
             <input type="email" name="email" placeholder="Your Email">
-            <button class="bg-[#f9fafb] text-black font-main" type="submit">Submit</button>
+            <button class="group relative inline-flex p-3 items-center justify-center overflow-hidden rounded-md border border-[#f9fafb] bg-transparent font-medium text-[#f9fafb] transition-all duration-100 [box-shadow:5px_5px_rgb(82_82_82)] active:translate-x-[3px] active:translate-y-[3px] active:[box-shadow:0px_0px_rgb(82_82_82)]" type="submit">Submit</button>
           </form>
           </div>
       </div>
