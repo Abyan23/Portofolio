@@ -14,10 +14,10 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </head>
     
-    <body class="bg-[#0a0a0a] w-full text-[#f9fafb] font-main2 scroll-smooth">
+    <body class="bg-[#0a0a0a] text-[#f9fafb] font-main2 scroll-smooth">
     <section
       id="home"
-      class="relative w-full text-[#f9fafb] opacity-1 flex flex-col align-middle justify-center px-10 md:flex-row md:items-center md:justify-center"
+      class="relative text-[#f9fafb] opacity-1 flex flex-col align-middle justify-center px-10 md:flex-row md:items-center md:justify-center"
     >
       <div data-scroll-animate
         class="flex flex-col justify-center text-center items-center h-screen md:items-start md:text-left md:ml-10"
@@ -52,11 +52,11 @@
       </div>
     </section>
 
-    <section id="about" data-scroll-animate class="relative w-full grid grid-cols-1 place-content-center text-center m-5 min-h-screen md:grid-cols-2">
+    <section id="about" data-scroll-animate class="relative grid grid-cols-1 place-content-center text-center min-h-screen md:grid-cols-2">
       <div 
           class="opacity-1">
         <h1 class="font-judul text-2xl text-center m-5"><u>About Me</u></h1>
-        <p class="font-base text-[#9ca3af] flex justify-center place-items-center ">
+        <p class="font-base text-[#9ca3af] flex justify-center place-items-center p-5">
           I’m a junior frontend developer focused on building clean and 
           responsive user interfaces. I usually work from existing designs, 
           but I also have experience contributing to UI design—such as creating 
@@ -121,13 +121,13 @@
         </button>
       </div>
 
-      <section id="portofolio" class="m-5 w-full" x-show="activeTab === 'portfolio'" x-transition.delay.75ms>
+      <section id="portofolio" class="m-5" x-show="activeTab === 'portfolio'" x-transition.delay.75ms>
         <h1 class="font-judul text-3xl text-center m-7">Portofolio</h1>
         <div
           class="grid grid-cols-1 gap-6 w-full w-full-lg mx-auto justify-items-center sm:grid-cols-2"
         >
           <div
-            class="max-w-full rounded-lg overflow-hidden shadow-2xl mx-auto bg-[#282828] border-2 border-gray-400"
+            class="w-full rounded-lg overflow-hidden shadow-2xl mx-auto bg-[#282828] border-2 border-gray-400"
           >
             <div class="relative w-full">
               <a href="https://raccolta.42web.io/" target="_blank">
@@ -147,7 +147,7 @@
           </div>
 
           <div
-            class="max-w-full rounded-lg overflow-hidden shadow-2xl mx-auto flex flex-col h-full bg-[#282828] border-2 border-gray-400"
+            class="w-full rounded-lg overflow-hidden shadow-2xl mx-auto flex flex-col h-full bg-[#282828] border-2 border-gray-400"
           >
             <div class="relative group w-full">
               <a href="https://avantiberkahsemesta.com" target="_blank">
@@ -176,7 +176,7 @@ PT. Avanti Berkah Semesta is a company engaged in heavy equipment rental, specif
       >
         <h1 class="font-judul text-3xl text-center m-7">Projects</h1>
         <div
-          class="bg-[#282828] border-2 border-gray-400 p-2 rounded-lg mx-auto md:max-w-screen-md"
+          class="bg-[#282828] border-2 border-gray-400 p-2 rounded-lg mx-auto"
         >
           <div class="relative mx-auto">
             <div class="swiper mySwiper">
@@ -275,7 +275,7 @@ PT. Avanti Berkah Semesta is a company engaged in heavy equipment rental, specif
     </div>
 
     <section class="w-full font-main border-t-2 border-white" id="contact">
-      <div class="flex justify-around w-screen">
+      <div class="flex justify-around w-full">
         <div class="text-2xl m-3 items-center w-[50%]">
           <h1 class="font-main font-bold text-lg text-[#9ca3af]">I'm open to collaboration and new opportunities</h1>
           <span class="text-xs">Feel Free to reach out!</span>
