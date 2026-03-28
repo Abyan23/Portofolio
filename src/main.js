@@ -1,37 +1,44 @@
-const swiper = new Swiper('.mySwiper', {
-  
+import { animate, inView } from "https://cdn.jsdelivr.net/npm/motion@12.29.2/+esm";
+
+
+const swiperStack = new Swiper(".swiperStack", {
+  loop: true,
   pagination: {
-    el: '.swiper-pagination',
+    el: ".swiper-pagination",
     clickable: true,
-  },
-  
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
   },
 });
 
+const swiperProjects = new Swiper(".swiperProjects", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
 
-import { animate, inView } from "https://cdn.jsdelivr.net/npm/motion@12.29.2/+esm";
+const directionMap = {
+  "fade":  { opacity: [0, 1], x: [0, 0],    y: [0, 0]  },
+  "left":  { opacity: [0, 1], x: [100, 0],  y: [0, 0]  },
+  "right": { opacity: [0, 1], x: [-100, 0], y: [0, 0]  },
+  "up":    { opacity: [0, 1], x: [0, 0],    y: [80, 0]  },
+};
 
-  inView("[data-scroll-animate]", (element) => {
-    animate(
-      element,
-      { opacity: 1, x: [-150, 0] },
-      { duration: 1, easing: [0.17, 0.55, 0.55, 1] }
-    );
-  });
+document.querySelectorAll("[data-scroll-animate]").forEach((el) => {
+  el.style.opacity = "0";
+});
 
-// let lastScroll = 0;
-// window.addEventListener("scroll", () => {
-//   const current = window.pageYOffset;
-//   if (current > lastScroll) {
-//           nav.classList.add("translate-y-full","duration-300");
-//           nav.classList.remove("translate-y-0");
-//   } else {
-//           nav.classList.add("translate-y-0");
-//           nav.classList.remove("translate-y-full");
-//   }
-//   lastScroll = current;
-// });
+inView(
+  "[data-scroll-animate]",
+  (element) => {
+    const direction = element.getAttribute("data-scroll-animate") || "fade";
+    const from = directionMap[direction] ?? directionMap["fade"];
 
+    animate(element, from, {
+      duration: 0.9,
+      easing: [0.17, 0.55, 0.55, 1],
+    });
+
+    return () => {};
+  },
+  { margin: "0px 0px -20% 0px" }
+);
